@@ -1,8 +1,4 @@
-# Introduction
-
-Codes related to the computational experiments of the working paper "Zhongli Wang. Heterogeneous Consumers, Firm Competition and the Data Value Chain: An Agent-based Approach."
-
-# Description
+# Heterogeneous Consumers, Firm Competition and the Data Value Chain: An Agent-based Approach
 
 ## Game-theoretical Analysis
 
@@ -25,16 +21,47 @@ Codes related to the computational experiments of the working paper "Zhongli Wan
 "Simul_Analysis01.ipynb", "Simul_Analysis02.ipynb",
 "Wilcoxon Signed Rank Test.ipynb" (Python version: 3.10.12)
 
-# Necessary Packages
+## Project Structure
 
-## Julia Packages
+```
+Heterog_Consumers_DVC/
+├── Game_Julia01.ipynb              # Equilibrium search using Julia
+├── Game_Equil01.ipynb              # Nash equilibrium analysis (Python)
+├── Game_Equil02.ipynb              # Nash equilibrium analysis (Python)
+├── Firm_dynamics.ipynb             # Agent-based firm dynamics simulation
+├── Simul_Analysis01.ipynb          # Simulation results analysis
+├── Simul_Analysis02.ipynb          # Simulation results analysis
+├── Wilcoxon Signed Rank Test.ipynb # Statistical testing of simulation results
+├── rand_sample03_new_100.csv       # Sample data for consumer taste distribution (functionality; data restriction)
+├── requirements_Julia.txt          # Julia package dependencies
+├── requirements_Python.txt         # Python package dependencies
+```
 
-Distributions, Random, MvNormalCDF, Query, Plots, StatsPlots, DataFrames, CSV, Dates
+## Requirements
 
-## Python Packages
+### Julia Packages
 
-numpy, pandas, matplotlib, seaborn, scipy, numba, IPython, ipywidgets
+- **Distributions.jl** - Probability distributions and statistical functions
+- **MvNormalCDF.jl** - Multivariate normal cumulative distribution functions
+- **Query.jl** - Data manipulation and querying operations
+- **Plots.jl** - Visualization and plotting framework
+- **StatsPlots.jl** - Statistical plotting recipes and visualizations
+- **DataFrames.jl** - Tabular data structures and operations
+- **CSV.jl** - Reading and writing CSV files
+- **StatsBase.jl** - Basic statistical functions and utilities
+- **Random** (stdlib) - Random number generation
+- **Dates** (stdlib) - Date and time operations
 
-# Acknowledgments
+### Python Packages
+
+- **numpy** - Array operations and numerical computing
+- **pandas** - Data manipulation and analysis with DataFrames
+- **matplotlib** - Data visualization and plotting
+- **seaborn** - Statistical data visualization
+- **scipy** - Scientific computing (optimization, linear algebra, statistics, interpolation)
+- **numba** - Just-in-time compilation for performance optimization
+- **ipywidgets** - Interactive widgets for Jupyter notebooks
+
+## Acknowledgments
 
 This work has received funding from the European Union's Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 956107, "Economic Policy in Complex Environments (EPOC)". Many thanks for the guidance of Prof. Herbert Dawid (UNIBI), Prof. Domenico Delli Gatti (UCSC) and Prof. Christiane Fuchs (UNIBI).

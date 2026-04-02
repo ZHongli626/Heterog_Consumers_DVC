@@ -1,0 +1,10 @@
+# Julia Packages
+
+Distributions==0.25.106
+MvNormalCDF==0.3.0
+Query==1.0.0
+Plots==1.39.0
+StatsPlots==0.15.6
+DataFrames==1.6.1
+CSV==0.10.12
+StatsBase==0.34.2
